@@ -294,7 +294,7 @@ getTargets <- function(mirnaObj,
         }
         
         ## keep interactions involving measured miRNAs
-        mt <- mt[mt$miRNA %in% allMirnas, c("miRNA", "Target Gene")]
+        mt <- mt[mt$miRNA %in% allMirnas, c("miRNA", "Target.Gene")]
         mt <- unique(mt)
         colnames(mt) <- c("MicroRNA", "Gene.Symbol")
 
